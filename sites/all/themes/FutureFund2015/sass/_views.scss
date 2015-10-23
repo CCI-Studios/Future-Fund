@@ -1,0 +1,230 @@
+.view-header-images
+{	
+	position: relative;
+	height: 600px;
+	border-bottom:3px solid $lightgreen;
+
+	.views-field-field-image-header
+	{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -10;
+		border-bottom: 3px solid $lightgreen;
+	}
+
+	.views-row
+	{
+		position: relative;
+		overflow: hidden;
+		height: 600px;
+		float: left;
+		box-shadow: 0px 0px 5px rgba(0,0,0,0.5) inset;
+	}
+
+	.slick-arrow
+	{
+		height:177px;
+	 	width:92px;
+	}
+ 
+ 	.slick-prev
+ 	{
+	 	left:0px;
+	 	background: url(../images/left-arrow.png) no-repeat;
+ 	}
+
+ 	.slick-next
+ 	{
+	 	right:0px;
+	 	background: url(../images/right-arrow.png) no-repeat;
+
+ 	}
+
+	.views-field-body
+	{
+		color: white;
+		position:absolute;
+		top:50%;
+		width:100%;
+		text-align: center;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+	 	-moz-transform: translateY(-50%);
+	 	-ms-transform: translateY(-50%);
+
+		h1
+		{
+			font-size: 4.2em;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		}
+	}
+}
+
+
+.view-testimonials .views-field-field-image-testimonials,
+.view-members .views-field-field-image-member
+{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 150px;
+	overflow: hidden;
+	border: 2px solid $darkgreen;
+}
+
+#block-views-members-block
+{	
+	padding-bottom:60px;
+
+	.views-field-title 
+	{
+		color:$darkgreen;
+		font-size: 14px;
+		padding-top:10px;
+
+	}
+
+	.views-field-field-image-member
+	{
+		background-color:#f2f6eb;
+	}
+	.views-row
+	{
+		width: 230px;
+		text-align: center;
+		display: inline-block;
+		margin: 20px 0px;
+	}
+
+	.view-content
+	{
+		text-align: center;
+	}
+
+	.views-field-title
+	{
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	h2
+	{
+		color:$darkgreen;
+	}
+
+}
+
+.view-testimonials
+{	
+	text-align:center;
+	color:$darkgreen;
+	margin:40px 0px;
+
+	
+	.views-field-title 
+	{
+		color:$lightgreen;
+		font-size: 14px;
+
+		&:before
+		{
+			content: "";
+			height: 1px;
+			width:10px;
+			display: inline-block;
+			border-top: 1px solid $lightgreen;
+			position: relative;
+			top: -3px;
+		}
+	}
+
+
+	.views-field-body
+	{	
+
+		position:relative;
+
+		padding: 30px 0px 10px;
+
+		&:after,
+		&:before
+		{
+			height: 100px;
+			position: absolute;
+			width: 124px;
+		}
+
+		p
+		{
+			font-weight: 600;
+		}
+
+
+		&:after
+		{
+			content:"";
+			right: 0px;
+			bottom: -20px;
+			background:url(../images/left-quote.png) no-repeat;
+		}
+
+		&:before
+		{
+			content:"";
+			left: 0px;
+			top: -28px;
+			background:url(../images/left-quote.png) no-repeat;
+		}
+	}
+	
+}
+
+
+.slick-arrow
+{
+ 	position: absolute;
+ 	top:50%;
+ 	transform: translateY(-50%);
+ 	-webkit-transform: translateY(-50%);
+ 	-moz-transform: translateY(-50%);
+ 	-ms-transform: translateY(-50%);
+ 	z-index: 999;
+ 	border:0px;
+ 	color:transparent;
+ 	cursor:pointer;
+ 	outline: none;
+}
+
+.page-testimonials
+{	
+	.views-row
+	{
+		padding-bottom: 40px;
+
+		.views-field-title
+		{
+			padding-bottom: 60px;
+		}
+	}
+
+	.views-row:after
+	{
+		content: "";
+		left: 0;
+		width: 100%;
+		position: ab;
+		border-bottom: 2px solid green;
+		left: 0;
+		width: 100%;
+		display: block;
+		position: absolute;
+
+	}
+
+	.views-row:last-child:after
+	{
+		display: none;
+	}
+}
+
