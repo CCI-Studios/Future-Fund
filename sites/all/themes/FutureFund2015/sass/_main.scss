@@ -1,7 +1,6 @@
 body
 {
-	font-family: 'Avenir', sans-serif;
-	font-weight: 100;
+	font-family:'Source Sans Pro', 'museo-sans', sans-serif;
 	font-size: 18px;
 	-webkit-font-smoothing: antialiased;
 }
@@ -20,6 +19,11 @@ h1,
 #logo
 {
 	float:left;
+
+	img
+	{
+		width:350px;
+	}
 }
 
 .region-header
@@ -72,10 +76,15 @@ h1,
 
 #block-block-1
 {
-	width:148px;
+	width:180px;
 	float:right;
 	padding-right:5%;
 	padding-top: 20px;
+
+	img
+	{
+		width: 180px;
+	}
 }
 
 #block-block-2
@@ -115,7 +124,7 @@ h1,
 		margin: 0 auto;
 		p
 		{
-			padding-bottom:20px;
+			padding-bottom:15px;
 		}
 	}
 }
@@ -147,7 +156,7 @@ h1,
 #block-block-3
 {	
 	overflow:hidden;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	padding-top: 30px;
 
 	.cross 
@@ -191,7 +200,7 @@ h1,
 
 #block-block-4
 {
-	height:600px;
+	height:500px;
 	width:100%;
 	margin:30px 0px;
 	margin-top:0px;
@@ -221,15 +230,15 @@ h1,
 {	
 
 	position: absolute;
-	bottom: 70px;
+	bottom: 36px;
 	right: 100px;
 	max-width: 400px;
-	color:white;
+	color: white;
 	border-radius: 576px;
-	padding: 100px 83px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-	background-color: $darkgreen;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	padding: 90px 63px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	background-color: #126b36;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
 	h2
 	{
@@ -288,16 +297,62 @@ h1,
 {	
 	text-align:center;
 	margin-bottom:40px;
+	margin-top:45px;
 	&>div
 	{
-		max-width: 942px;
+		max-width: 1042px;
 		margin: 0 auto;
+	}
+
+	#block-block-13 .content p
+	{	
+		position: relative;
+		margin-top: -13px;
+		img:last-child
+		{
+			padding-left:60px;
+		}
+
+		&:before
+		{
+			content: "";
+			display: inline-block;
+			height: 80px;
+			top:10px;
+			width:1px;
+			position:absolute;
+			left: 225px;
+			background-color:$lightgreen;
+		}
+	}
+
+	.region-footer
+	{
+		float: left;
+		width: 445px;
+
+		img
+		{
+			width:180px!important;
+			height: auto!important;
+			display: inline-block;
+			vertical-align: middle;
+			padding-bottom: 20px;
+
+		}
+	}
+
+	#footer-logo-ff img
+	{
+		width:300px;
 	}
 	span
 	{
-		padding-right: 40px;
+		padding-right: 25px;
+		padding-left:25px;
 		display: inline-block;
 		border-right: 1px solid $lightgreen;
+		border-left: 1px solid $lightgreen;
 	}
 
 	a
@@ -336,7 +391,7 @@ h1,
 {
 	width: 200px;
 	display: inline-block;
-	padding-left: 40px;
+	padding-left: 25px;
 }
 
 #block-block-7
@@ -455,7 +510,7 @@ h1,
 {
 	float: left;
 	width: 50%;
-	height: 450px;
+	height: 320px;
 	color:white;
 	position: relative;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -468,22 +523,30 @@ h1,
 	}
 	h2
 	{
-		font-size: 36px;
+		font-size: 28px;
 		padding-bottom: 10px;
 	}
 
-	.button
-	{
-		margin: 0;
-		text-align: center;
-	}
 
 	.content
 	{
-		width:305px;
+		width:320px;
 		float: right;
 		padding-right:50px;
-		padding-top:130px;
+		padding-top:100px;
+
+		a.button
+		{
+			margin: 0;
+			color: $lightgreen;
+			text-align: center;
+
+			&:hover
+			{
+				color:white;
+			}
+		}
+
 	}
 }
 
@@ -494,12 +557,26 @@ h1,
 	&:before
 	{
 		content:"";
-		top:100px;
-		left:60px;
-		width: 257px;
+		top:90px;
+		left:100px;
+		width: 25%;
 		height: 257px;
 		background:url(../images/gift.png) no-repeat;
 		background-size:contain;
+	}
+
+	.content{
+		padding-top:90px;
+		
+		a
+		{
+			color:white;
+
+			&:hover
+			{
+				color:$lightgreen;
+			}
+		}
 	}
 }
 
@@ -510,14 +587,19 @@ h1,
 
 	&:before
 	{
-		content:url(../images/arrow-investment.png);
-		left:-57px;
-		top:110px;
+		content:"";
+		background:url(../images/arrow-investment.png) no-repeat;
+		background-size:contain;
+		left:-43px;
+		top:87px;
+		width:38%;
+		height: 250px;
 	}
 
 	.content
 	{
-		padding-top:100px;
+		padding-top:70px;
+		padding-right:120px;
 	}
 }
 
@@ -546,6 +628,7 @@ h1,
 #block-system-main
 {	
 	margin-top:60px;
+	margin-bottom:60px;
 
 	& > .content
 	{
@@ -554,9 +637,10 @@ h1,
 
 	h1
 	{	
-		font-size: 3.2em;
+		font-size: 3em;
 		color:$darkgreen;
 		padding-bottom:10px;
+		line-height: 1.1em;
 	}
 
 	a
@@ -573,12 +657,13 @@ h1,
 	h2
 	{
 		font-weight:bold;
+		line-height: 1.1em;
 	}
 
 	h2,
 	.view-did-you-know .views-field-title
 	{
-		font-size: 2em;
+		font-size: 2.3em;
 		color:$darkgreen;
 		padding-bottom:10px;
 	}
@@ -590,7 +675,7 @@ h1,
 	background-color:$leafgreen;
 	border-top:3px solid $darkgreen;
 	color:white;
-	min-height:450px;
+	min-height:350px;
 	position: relative;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
@@ -606,6 +691,7 @@ h1,
 		left: -40px;
 		background: url(../images/green-arrow-investment.png) no-repeat;
 		background-position-x: -100px;
+		background-size:contain;
 		
 	}
 
@@ -621,7 +707,7 @@ h1,
 
 	h2:first-child
 	{
-		font-size: 2em;
+		font-size: 2.3em;
 	}
 
 	h2
@@ -635,7 +721,7 @@ h1,
 			color: $darkgreen;
 			text-decoration: none;
 			text-shadow: none;
-			font-size: 24px;
+			font-size: 26px;
 
 			&:hover
 			{
@@ -657,32 +743,30 @@ h1,
 	{
 		max-width: 550px;
 		margin: 0 auto;
-		padding:60px 0px;
+		padding:40px 0px;
 		padding-left: 400px;
 	}
 }
 
 .page-node-21
 {	
-
-	
 	.field-name-body .field-item
 	{
 		ul
 		{
 			overflow: hidden;
 			text-align: center;
-			margin: 30px 0px 70px 0;
+			margin: 30px 0px 40px 0;
 		}
 
 		ul li
 		{
 			display: inline-table;
 			list-style: none;
-			width:175px;
-			padding: 0 25px;
+			width: 222px;
+			padding: 0 5px;
 			color:$darkgreen;
-			font-size: 22px;
+			font-size: 24px;
 			font-weight: bold;
 			margin-bottom: 30px;
 
@@ -725,7 +809,7 @@ h1,
 	{	
 		display: block;
 		position: absolute;
-		top: 68px;
+		top: 40px;
 		left: -10px;
 		content: url(../images/green-gift.png);
 	}

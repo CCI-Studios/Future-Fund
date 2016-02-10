@@ -1,25 +1,37 @@
 
 @media screen and (max-width:1380px)
 {
-	#block-block-9:before
-	{
-		left: 30px;
-	}
-
-
+	
 	#logos
 	{
-		width:45%;
+		width:47%;
 	}
 
 	#block-block-1
 	{
 		padding-right:0px;
 	}
+
+	#block-block-9:before
+	{
+		left: 70px;
+	}
+
+	#block-block-10 .content
+	{
+		padding-right:100px;	
+	}
 }
 
-@media screen and (max-width:1320px)
-{
+@media screen and (max-width:1260px)
+{	
+
+	#block-block-9:before
+	{
+		left: 30px;
+	}
+
+
 	#logo img
 	{
 
@@ -42,7 +54,7 @@
 	#block-block-9,
 	#block-block-10
 	{
-		height: 525px;
+		height: 400px;
 	}
 
 	#block-block-9,
@@ -52,14 +64,14 @@
 		&:before
 		{
 			left: 0px;
-			top: 35px;
-			background-size:inherit;
+			top: 0px;
+			background-size:150px;
 		}
 		.content
 		{
 			float: none;
-			padding-top:300px;
-			
+			padding-top:200px;
+			width:300px;
 			padding-right:0px;
 		}
 	}
@@ -68,11 +80,14 @@
 	{	
 		&:before
 		{
-			left:-50px;
+			left:-30px;
+			width: 100%;
+			top:50px;
+			background-size:250px
 		}
 		.content
 		{
-			padding-top: 250px;
+			padding-top: 177px;
 		}
 	}
 
@@ -190,11 +205,39 @@
 		}
 	}
 
+
+	#footer 
+	{	
+		.region-footer
+		{
+			float: none;
+			width:100%;
+
+		}
+
+		span
+		{
+			border-left:0px;
+		}
+		
+	}
+
+	#footer #block-block-13 .content p
+	{	
+		&:before
+		{
+			left: 50%;
+		}
+
+		
+	}
+	
+
 }
 
 @media screen and (max-width:980px)
 {	
-	
+
 	#block-block-3 
 	{	
 
@@ -238,6 +281,40 @@
 
 @media screen and (max-width:767px)
 {	
+
+	#footer 
+	{	
+		.region-footer img
+		{
+			display: block;
+			margin: 0 auto;
+		}
+
+		span
+		{
+			padding-left:0px;
+		}
+		
+		#footer-logo-ff img
+		{
+			width:280px;
+		}
+	}
+
+	#footer #block-block-13 .content 
+	{	
+		p:before
+		{
+			display: none;
+		}
+
+		p img:last-child
+		{
+			padding-left:0px;
+		}
+	
+	}
+
 	.view-header-images
 	{		
 		.slick-arrow
@@ -259,7 +336,7 @@
 
 	#block-block-9 .content
 	{
-		padding-top:80px;
+		padding-top:60px;
 	}
 
 	#block-block-10 .content
@@ -272,7 +349,7 @@
 
 		float: none;
 		width:100%;
-		height: 350px;
+		height: 280px;
 
 		.content
 		{
@@ -473,7 +550,7 @@
 
 	#block-block-5
 	{
-		padding: 60px 20px;
+		padding: 75px 20px;
 		width:300px;
 		left: 50%;
 		transform: translateX(-50%);
@@ -583,6 +660,7 @@
 		&:after
 		{
 			top:10px;
+			position: relative;
 		}
 	}
 

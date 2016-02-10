@@ -144,7 +144,7 @@
       <div>
         <div>
             <?php print render($page['footer']); ?>
-            <div> <span> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="/sites/all/themes/FutureFund2015/images/logo.svg" onerror="src='/sites/default/files/logo.png'; this.onerror='null'" alt="<?php print t('Home'); ?>" /></a>
+            <div> <span> <a href="<?php print $front_page; ?>" id="footer-logo-ff" title="<?php print t('Home'); ?>"><img src="/sites/all/themes/FutureFund2015/images/logo.svg" onerror="src='/sites/default/files/logo.png'; this.onerror='null'" alt="<?php print t('Home'); ?>" /></a>
             </span><?php
                 $block = block_load('block', '6');
                 $block2= _block_render_blocks(array($block));

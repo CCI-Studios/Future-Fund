@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Views Future feature.
+ */
+
+include_once 'views_future.features.inc';
